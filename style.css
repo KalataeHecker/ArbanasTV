@@ -56,12 +56,30 @@ body {
     margin-bottom: 10px;
 }
 
-.tv-item:hover {
-    transform: scale(1.05);
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
 }
 
-@media (max-width: 768px) {
-    .tv-content {
-        grid-template-columns: 1fr;
-    }
+#play-pause-btn {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#play-pause-btn:focus {
+    outline: none;
+}
+
+.tv-item:hover {
+    transform: scale(1.05);
 }
